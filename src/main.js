@@ -34,22 +34,6 @@ const cringeSort = (() => {
   };
 })();
 
-array => {
-  let i = 0;
-  if (i >= array.length) {
-    noLoop();
-    console.log("done");
-    return;
-  }
-  array.forEach((element, index) => {
-    if (element < array[i]) {
-      array[index] = array[i];
-      array[i] = element;
-    }
-  });
-  i++;
-};
-
 const numbers = generateRandomArray(CANVAS_WIDTH);
 
 function setup() {
